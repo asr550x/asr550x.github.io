@@ -9,7 +9,7 @@ script:
 after_success:
     - cd docs/.vuepress/dist
     - git init
-    - git config --global user.name "${GIT}_NAME}"
+    - git config --global user.name "${GIT_NAME}"
     - git config --global user.email "${GIT_EMAIL}"
     - git add -A
     - git commit -m 'deploy'
