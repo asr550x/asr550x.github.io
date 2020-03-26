@@ -12,7 +12,7 @@
     │   ├── README.md               # 首页
     │   ├── docs                    # 文档
     │   │   ├── quick-start.md
-    │   │   └── ...                 # 其他文档
+    │   │   └── zh                  # 中文文档
     │   │
     │
     └── package.json
@@ -44,7 +44,9 @@
 新建文件后，并不能立马显示，还需要在 `./docs/.vuepress/config.js` 中添加该页面的配置：
 
 ```js
-function genSidebarConfig() {
+// genEnSidebarConfig 英文版配置
+// genZhSidebarConfig 中文版配置
+function genEnSidebarConfig() {
   return [
     {
       title: ' ASR 手册',
@@ -94,7 +96,7 @@ function genSidebarConfig() {
 
 ## 发布
 
-发布到 `master` 分支即可，[Jenkins](https://jenkins.huitong-tech.com) 将会自动部署 `master` 分支，访问 [https://handbook.huitong-tech.com](https://handbook.huitong-tech.com) 即可。
+发布到 `master` 分支即可，[Travis-Ci](https://travis-ci.org/github/asr550x/asr550x.github.io) 将会自动部署 `docs` 分支，访问 [https://asr550x.github.io](https://asr550x.github.io) 即可。
 
 ## 图标
 

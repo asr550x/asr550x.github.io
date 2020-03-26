@@ -1,10 +1,16 @@
 module.exports = {
-  title: '慧通科技手册',
+  title: 'ASR550x 文档',
   base: '/',
   locales: {
     '/': {
+      lang: 'en-US',
+      title: 'ASR550x Documents',
+      description: 'description'
+    },
+    '/zh/': {
       lang: 'zh-CN',
-      title: '慧通科技手册'
+      title: 'ASR550x 文档',
+      description: ''
     }
   },
   head: [
@@ -13,17 +19,34 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/images/logo.png',
-    repoLabel: '项目仓库',
-    repo: 'https://git.huitong-tech.com/huitong/handbook',
+    repo: 'https://github.com/asr550x/asr550x.github.io',
     docsDir: 'docs',
     editLinks: true,
-    editLinkText: '在 GitLab 上编辑此页面',
     sideBar: 'auto',
     sidebarDepth: 3,
     smoothScroll: true,
-    lastUpdated: '上次更新',
     locales: {
       '/': {
+        selectText: 'Languages',
+        editLinkText: "Edit this page on GitHub",
+        repoLabel: "GitHub",
+        label: 'English',
+        lastUpdated: "Last Updated",
+        serviceWorker: {
+          updatePopup: {
+            message: "Update Found.",
+            buttonText: "Refresh"
+          }
+        },
+        nav: [
+          { text: 'Get started', link: '/company/' }
+        ],
+        sidebar: {
+          '/': genEnSidebarConfig(),
+        }
+
+      },
+      '/zh/': {
         selectText: '选择语言',
         label: '简体中文',
         serviceWorker: {
@@ -36,7 +59,7 @@ module.exports = {
           { text: '开始探索', link: '/company/' }
         ],
         sidebar: {
-          '/': genSidebarConfig(),
+          '/': genZhSidebarConfig(),
         }
       }
     }
@@ -45,14 +68,14 @@ module.exports = {
   evergreen: true
 }
 
-function genSidebarConfig() {
+function genEnSidebarConfig() {
   return [
     {
-      title: '慧通科技手册',
+      title: 'ASR550x Documents',
       path: '/'
     },
     {
-      title: '公司简介',
+      title: 'Intro',
       collapsable: true,
       path: '/company/',
       children: [
@@ -60,7 +83,7 @@ function genSidebarConfig() {
       ]
     },
     {
-      title: '人员',
+      title: 'People',
       collapsable: true,
       path: '/people/',
       children: [
@@ -68,13 +91,68 @@ function genSidebarConfig() {
       ]
     },
     {
-      title: '技术',
+      title: 'Tech',
       collapsable: true,
       path: '/engineering/',
       children: [
         {
-          title: '研发',
+          title: 'Development',
           path: '/engineering/development/',
+          children: [
+            'engineering/development/git-branch-spec',
+            'engineering/development/java-spec',
+            'engineering/development/python-spec',
+            'engineering/development/restful-spec',
+            'engineering/development/mysql-spec',
+            'engineering/development/ant-vue-spec',
+            'engineering/development/front-spec'
+          ]
+        },
+      ]
+    },
+    {
+      title: 'Finance',
+      collapsable: true,
+      path: '/finance/',
+      children: [
+        'finance/salary',
+        'finance/reimbursement',
+      ]
+    },
+  ]
+}
+
+
+function genZhSidebarConfig() {
+  return [
+    {
+      title: 'ASR550x 文档',
+      path: '/zh/'
+    },
+    {
+      title: '简介',
+      collapsable: true,
+      path: '/zh/company/',
+      children: [
+        '/zh/company/intro',
+      ]
+    },
+    {
+      title: '人员',
+      collapsable: true,
+      path: '/zh/people/',
+      children: [
+        'people/onboarding',
+      ]
+    },
+    {
+      title: '技术',
+      collapsable: true,
+      path: '/zh/engineering/',
+      children: [
+        {
+          title: '研发',
+          path: '/zh/engineering/development/',
           children: [
             'engineering/development/git-branch-spec',
             'engineering/development/java-spec',
@@ -90,7 +168,7 @@ function genSidebarConfig() {
     {
       title: '财务',
       collapsable: true,
-      path: '/finance/',
+      path: '/zh/finance/',
       children: [
         'finance/salary',
         'finance/reimbursement',

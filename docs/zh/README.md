@@ -1,7 +1,7 @@
 ---
 sidebar: false
 ---
-# ASR550x Documents
+# ASR550x 文档
 
 ASR550x 文档代码仓库，项目成员是公司所有人。我们通过开源软件协同开发的方式来对这个产品的代码进行管理，每个成员都可以通过发起 Merge Request 进行贡献，同时也可以通过发起 Issue 进行提问。
 
