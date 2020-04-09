@@ -6,7 +6,7 @@ todo
 
 ## 官网
 
-* [www.huitong-tech.com](https://huitong.tech)
+* [www.huitong-tech.com](https://www.baidu.com)
 * [huitong.tech](https://huitong.tech)
 
 ## 邮箱
