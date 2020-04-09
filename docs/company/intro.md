@@ -21,7 +21,7 @@ todo
 
 Logo & Text
 
-![logo](/public/images/logo.png)
+![logo](/images/logo.png)
 
 Logo
 
