@@ -21,12 +21,10 @@ todo
 
 Logo & Text
 
-![logo](/assets/images/company/huitong-logo-text.svg)
+![logo](/images/logo.png)
 
 Logo
 
-![logo](/assets/images/company/huitong-logo.svg)
+![logo](/images/logo.png)
 
-Favicon
 
-[favicon](/assets/files/company/huitong-favicon-multi-sizes.zip)

@@ -25,8 +25,6 @@ Logo & Text
 
 Logo
 
-![logo](/assets/images/company/huitong-logo.svg)
+![logo](/images/logo.png)
 
-Favicon
 
-[favicon](/assets/files/company/huitong-favicon-multi-sizes.zip)
