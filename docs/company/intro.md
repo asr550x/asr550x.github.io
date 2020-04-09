@@ -15,13 +15,13 @@ todo
 
 ## 手册仓库地址
 
-[https://git.huitong-tech.com/huitong/handbook](https://git.huitong-tech.com/huitong/handbook)
+[https://asr550x.github.io/](https://asr550x.github.io/)
 
 ## 视觉资源
 
 Logo & Text
 
-![logo](/assets/images/company/huitong-logo-text.svg)
+![logo](/public/images/logo.png)
 
 Logo
 

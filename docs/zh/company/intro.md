@@ -6,8 +6,8 @@ todo
 
 ## 官网
 
-* [www.huitong-tech.com](https://huitong.tech)
-* [huitong.tech](https://huitong.tech)
+* [www.baidu.com](https://www.baidu.com)
+* [www.baidu.com](https://www.baidu.com)
 
 ## 邮箱
 
@@ -15,7 +15,7 @@ todo
 
 ## 手册仓库地址
 
-[https://git.huitong-tech.com/huitong/handbook](https://git.huitong-tech.com/huitong/handbook)
+[https://asr550x.github.io](https://asr550x.github.io/)
 
 ## 视觉资源
 
